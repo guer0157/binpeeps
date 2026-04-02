@@ -316,6 +316,12 @@
           placeholder="Email"
           required
         />
+        <input
+          class="form-control mb-2"
+          name="phone"
+          placeholder="Phone"
+          required
+        />
         <textarea
           class="form-control mb-2"
           name="message"
@@ -511,7 +517,7 @@
             phone: this.phone.value,
             message: this.message.value,
           };
-
+          console.log("Sending contact form data:", data);
           try {
             const res = await fetch(
               "https://askcharly.ca/api/email/geckodes/contact-us",
