@@ -1,0 +1,533 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bin Peeps - Trash Bin Cleaning</title>
+    <link
+      rel="icon"
+      type="image/png"
+      href="/assets/favicon-96x96.png"
+      sizes="96x96"
+    />
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
+    <link rel="shortcut icon" href="/assets/favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/assets/apple-touch-icon.png"
+    />
+    <meta name="apple-mobile-web-app-title" content="binpeeps.com" />
+    <link rel="manifest" href="/assets/site.webmanifest" />
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Material Icons -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <!-- JSON-LD -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Bin Peeps",
+        "description": "Professional residential and commercial trash bin cleaning services.",
+        "serviceType": "Trash Bin Cleaning",
+        "areaServed": [
+          {
+            "@type": "City",
+            "name": "Ottawa",
+            "addressRegion": "ON",
+            "addressCountry": "CA"
+          },
+          {
+            "@type": "City",
+            "name": "Gatineau",
+            "addressRegion": "QC",
+            "addressCountry": "CA"
+          }
+        ]
+      }
+    </script>
+
+    <style>
+      body {
+        margin: 0;
+        font-family: sans-serif;
+      }
+      .navbar {
+        background: #0d6efd;
+      }
+      .hero {
+        background: #0d6efd;
+        color: white;
+        padding: 60px 20px;
+        text-align: center;
+      }
+      .section {
+        padding: 40px 20px;
+      }
+      .menu-btn {
+        color: white;
+        border: none;
+        background: none;
+      }
+      .offcanvas {
+        background: #0d6efd;
+        color: white;
+      }
+      .offcanvas a {
+        color: white;
+        text-decoration: none;
+        display: block;
+        padding: 10px 0;
+      }
+      .did-you-know {
+        position: relative;
+      }
+      .garbage-bin-image {
+        position: absolute;
+        bottom: 0px;
+        right: 0px;
+        max-width: 40%;
+        opacity: 0.8;
+      }
+      .year-membership {
+        position: relative;
+        background: #f8f9fa;
+        border: 1px solid #dee2e6;
+        border-radius: 5px;
+      }
+      .special-offer-img {
+        position: absolute;
+        transform: rotate(40deg);
+        top: -40px;
+        right: -20px;
+        width: 90px;
+        height: 90px;
+        object-fit: cover;
+        border-radius: 50%;
+        border: 3px solid #dc3545;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar d-flex justify-content-between px-3">
+      <span class="text-white fw-bold">Bin Peeps</span>
+      <button
+        class="menu-btn"
+        data-bs-toggle="offcanvas"
+        data-bs-target="#menu"
+      >
+        <span class="material-icons">menu</span>
+      </button>
+    </nav>
+
+    <!-- OFFCANVAS MENU -->
+    <div class="offcanvas offcanvas-end" id="menu">
+      <div class="offcanvas-header">
+        <h5>Menu</h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <a href="#home">Home</a>
+        <a href="#residential">Residential</a>
+        <a href="#commercial">Commercial</a>
+        <a href="#contact">Contact</a>
+        <a href="#faq">FAQ</a>
+      </div>
+    </div>
+
+    <!-- HOME -->
+    <section id="home" class="hero">
+      <img
+        src="/binpeeps-no-bg.png"
+        alt="Bin Peeps Logo"
+        style="max-width: 90%; margin-bottom: 20px"
+      />
+      <h1>Professional Bin Cleaning</h1>
+      <p>We power wash your trash bins, leaving them fresh & odor-free.</p>
+    </section>
+    <section class="did-you-know section bg-light text-dark">
+      <div class="container">
+        <div class="card p-4 shadow-sm border-0">
+          <h2 class="mb-3">Did you know?</h2>
+
+          <p>
+            Dirty garbage bins are one of the main things that attract rodents
+            like rats, mice, raccoons and skunks. Food residue, odors, and
+            bacteria create the perfect environment for pests to gather, nest,
+            and spread around your property.
+          </p>
+
+          <p>
+            At <strong>Bin Buddy</strong>, we don’t just clean your bins — we
+            help protect your home. Our professional power washing removes
+            built-up grime, bacteria, and odors that attract pests.
+          </p>
+
+          <p>
+            We also apply a
+            <strong>safe rodent-repellent treatment</strong> after each
+            cleaning, helping keep unwanted visitors away and giving you peace
+            of mind.
+          </p>
+
+          <div class="mt-3">
+            <strong
+              >✔ Eliminate odors<br />
+              ✔ Reduce bacteria<br />
+              ✔ Help prevent rodents</strong
+            >
+          </div>
+        </div>
+      </div>
+      <img
+        src="/binpynobg-right.png"
+        alt="Rodent Repellent"
+        class="garbage-bin-image"
+      />
+    </section>
+    <!-- RESIDENTIAL -->
+    <section id="residential" class="section">
+      <h2>Residential</h2>
+
+      <div class="card p-3 mb-3">
+        <h4>$35 for 2 Bins</h4>
+        <p>$10 per additional bin</p>
+      </div>
+
+      <div class="year-membership card p-3">
+        <h4>$125 Year Round</h4>
+        <p>4 cleanings per year (March, June, September, November)</p>
+        <p>Includes 2 bins per visit</p>
+        <img
+          src="/assets/special-offer.jpg"
+          alt="Year Round Special Offer"
+          class="special-offer-img"
+        />
+      </div>
+
+      <!-- FAQ JSON-LD -->
+      <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Why is it important to clean your garbage bins?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Garbage bins collect bacteria, odors, and food residue that attract pests like rodents and insects. Regular bin cleaning helps eliminate harmful bacteria, reduce odors, and prevent infestations around your home."
+              }
+            },
+
+            {
+              "@type": "Question",
+              "name": "How often should garbage bins be cleaned?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "It is recommended to clean your garbage bins every 3 months. Regular quarterly cleaning keeps odors under control and helps prevent bacteria buildup and pest attraction."
+              }
+            },
+
+            {
+              "@type": "Question",
+              "name": "How much does bin cleaning cost in Ottawa and Gatineau?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Our residential bin cleaning service starts at $35 for two bins, with additional bins at $10 each. We also offer a yearly plan for $125, which includes four cleanings per year."
+              }
+            },
+
+            {
+              "@type": "Question",
+              "name": "Do you offer bin cleaning services in Ottawa and Gatineau?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, we provide professional garbage bin cleaning services in Ottawa, Ontario and Gatineau, Quebec. Contact us to confirm availability in your specific neighborhood."
+              }
+            },
+
+            {
+              "@type": "Question",
+              "name": "Do you help prevent rodents and pests?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. Our cleaning process removes food residue and bacteria that attract pests. We also apply a rodent-repellent treatment to help reduce the chances of rodents and insects around your bins."
+              }
+            },
+
+            {
+              "@type": "Question",
+              "name": "What is included in your bin cleaning service?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Our service includes high-pressure washing, deodorizing, and sanitizing your bins. We remove grime, eliminate odors, and leave your bins clean and fresh after every visit."
+              }
+            },
+
+            {
+              "@type": "Question",
+              "name": "Do I need to be home during the service?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "No, you do not need to be home. As long as your bins are accessible, we can complete the cleaning service and leave them sanitized and ready to use."
+              }
+            }
+          ]
+        }
+      </script>
+    </section>
+
+    <!-- COMMERCIAL -->
+    <section id="commercial" class="section">
+      <h2>Commercial</h2>
+      <div class="card p-3">
+        <p>A site visit is required to assess the work and provide pricing.</p>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <h2>Contact</h2>
+      <form id="contactForm" class="card p-3">
+        <input
+          class="form-control mb-2"
+          name="name"
+          placeholder="Name"
+          required
+        />
+        <input
+          class="form-control mb-2"
+          name="email"
+          placeholder="Email"
+          required
+        />
+        <textarea
+          class="form-control mb-2"
+          name="message"
+          placeholder="Message"
+          required
+        ></textarea>
+        <button class="btn btn-primary">Send</button>
+      </form>
+    </section>
+    <section class="section container" id="faq">
+      <h2 class="mb-4">Frequently Asked Questions</h2>
+
+      <div class="accordion" id="faqAccordion">
+        <!-- Q1 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#faq1"
+            >
+              Why is it important to clean your garbage bins?
+            </button>
+          </h2>
+          <div
+            id="faq1"
+            class="accordion-collapse collapse show"
+            data-bs-parent="#faqAccordion"
+          >
+            <div class="accordion-body">
+              Garbage bins collect bacteria, odors, and food residue that
+              attract rodents and insects. Regular cleaning helps eliminate
+              bacteria, reduce smells, and prevent infestations.
+            </div>
+          </div>
+        </div>
+
+        <!-- Q2 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#faq2"
+            >
+              How often should bins be cleaned?
+            </button>
+          </h2>
+          <div
+            id="faq2"
+            class="accordion-collapse collapse"
+            data-bs-parent="#faqAccordion"
+          >
+            <div class="accordion-body">
+              We recommend cleaning your bins every 3 months to keep odors under
+              control and prevent buildup of bacteria and pests.
+            </div>
+          </div>
+        </div>
+
+        <!-- Q3 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#faq3"
+            >
+              How much does bin cleaning cost?
+            </button>
+          </h2>
+          <div
+            id="faq3"
+            class="accordion-collapse collapse"
+            data-bs-parent="#faqAccordion"
+          >
+            <div class="accordion-body">
+              Our service starts at $35 for 2 bins, with additional bins at $10
+              each. We also offer a yearly plan for $125 which includes 4
+              cleanings.
+            </div>
+          </div>
+        </div>
+
+        <!-- Q4 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#faq4"
+            >
+              Do you service Ottawa and Gatineau?
+            </button>
+          </h2>
+          <div
+            id="faq4"
+            class="accordion-collapse collapse"
+            data-bs-parent="#faqAccordion"
+          >
+            <div class="accordion-body">
+              Yes, we provide bin cleaning services in Ottawa, Ontario and
+              Gatineau, Quebec. Contact us to confirm your location.
+            </div>
+          </div>
+        </div>
+
+        <!-- Q5 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#faq5"
+            >
+              Do you help prevent rodents and pests?
+            </button>
+          </h2>
+          <div
+            id="faq5"
+            class="accordion-collapse collapse"
+            data-bs-parent="#faqAccordion"
+          >
+            <div class="accordion-body">
+              Yes. We remove food residue and bacteria that attract pests, and
+              apply a rodent-repellent treatment to help keep them away.
+            </div>
+          </div>
+        </div>
+
+        <!-- Q6 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#faq6"
+            >
+              Do I need to be home during the service?
+            </button>
+          </h2>
+          <div
+            id="faq6"
+            class="accordion-collapse collapse"
+            data-bs-parent="#faqAccordion"
+          >
+            <div class="accordion-body">
+              No, as long as your bins are accessible, we can complete the
+              service and leave them clean and sanitized.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      const offcanvasEl = document.getElementById("menu");
+      const offcanvas = bootstrap.Offcanvas.getOrCreateInstance(offcanvasEl);
+      document.documentElement.style.scrollBehavior = "smooth";
+      document.querySelectorAll("#menu a").forEach((link) => {
+        link.addEventListener("click", function (e) {
+          e.preventDefault(); // prevent instant jump
+
+          const targetId = this.getAttribute("href");
+          const targetEl = document.querySelector(targetId);
+
+          // Close menu first
+          offcanvas.hide();
+
+          // Wait for menu animation to finish, then scroll smoothly
+          setTimeout(() => {
+            if (targetEl) {
+              targetEl.scrollIntoView({ behavior: "smooth" });
+            }
+          }, 300); // matches Bootstrap animation timing
+        });
+      });
+      document
+        .getElementById("contactForm")
+        .addEventListener("submit", async function (e) {
+          e.preventDefault();
+
+          const data = {
+            name: this.name.value,
+            email: this.email.value,
+            message: this.message.value,
+          };
+
+          try {
+            const res = await fetch("YOUR_ENDPOINT_HERE", {
+              method: "POST",
+              headers: { "Content-Type": "application/json" },
+              body: JSON.stringify(data),
+            });
+
+            if (res.ok) {
+              alert("Message sent");
+              this.reset();
+            } else {
+              alert("Error");
+            }
+          } catch {
+            alert("Network error");
+          }
+        });
+    </script>
+  </body>
+</html>
