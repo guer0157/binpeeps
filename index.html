@@ -508,16 +508,19 @@
           const data = {
             name: this.name.value,
             email: this.email.value,
+            phone: this.phone.value,
             message: this.message.value,
           };
 
           try {
-            const res = await fetch("YOUR_ENDPOINT_HERE", {
-              method: "POST",
-              headers: { "Content-Type": "application/json" },
-              body: JSON.stringify(data),
-            });
-
+            const res = await fetch(
+              "https://askcharly.ca/api/email/geckodes/contact-us",
+              {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify(data),
+              },
+            );
             if (res.ok) {
               alert("Message sent");
               this.reset();
